@@ -15,6 +15,13 @@ public:
     explicit SpellCheckerWindow(QWidget *parent = 0);
     ~SpellCheckerWindow();
 
+private slots:
+    void on_spellButton_clicked();
+
+    void on_loadButton_clicked();
+
+    void on_clearButton_clicked();
+
 private:
     Ui::SpellCheckerWindow *ui;
 };
