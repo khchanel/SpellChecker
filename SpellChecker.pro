@@ -16,3 +16,6 @@ SOURCES += main.cpp\
 HEADERS  += spellcheckerwindow.h
 
 FORMS    += spellcheckerwindow.ui
+
+OTHER_FILES += \
+    .gitignore
