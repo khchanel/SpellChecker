@@ -6,14 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>559</width>
+    <height>329</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SpellCheckerWindow</string>
+   <string>Nelson's SpellChecker</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="textEditLabel">
+     <property name="text">
+      <string>Enter text below:</string>
+     </property>
+    </widget>
+   </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
@@ -22,25 +29,26 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Preferred</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QPushButton" name="spellButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>Spell Check</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clearButton">
+         <property name="text">
+          <string>Clear Format</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="loadButton">
+         <property name="text">
+          <string>Load Dictionary</string>
          </property>
         </widget>
        </item>
@@ -57,23 +65,16 @@
          </property>
         </spacer>
        </item>
-       <item>
-        <widget class="QPushButton" name="loadButton">
-         <property name="text">
-          <string>Load</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="clearButton">
-         <property name="text">
-          <string>Clear</string>
-         </property>
-        </widget>
-       </item>
       </layout>
      </item>
     </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="status">
+     <property name="text">
+      <string>&lt;font color=&quot;red&quot;&gt;Dictionary not loaded.&lt;/font&gt;</string>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

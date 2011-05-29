@@ -8,14 +8,19 @@ QT       += core gui
 
 TARGET = SpellChecker
 TEMPLATE = app
+LIBS += -lhunspell-1.2
 
 
 SOURCES += main.cpp\
-        spellcheckerwindow.cpp
+        spellcheckerwindow.cpp \
+    spellchecker.cpp
 
-HEADERS  += spellcheckerwindow.h
+HEADERS  += spellcheckerwindow.h \
+    spellchecker.h
 
 FORMS    += spellcheckerwindow.ui
 
 OTHER_FILES += \
     .gitignore
+
+RESOURCES +=

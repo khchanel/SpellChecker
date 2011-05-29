@@ -3,6 +3,8 @@
 
 #include <QWidget>
 
+class SpellChecker;
+
 namespace Ui {
     class SpellCheckerWindow;
 }
@@ -17,13 +19,12 @@ public:
 
 private slots:
     void on_spellButton_clicked();
-
     void on_loadButton_clicked();
-
     void on_clearButton_clicked();
 
 private:
     Ui::SpellCheckerWindow *ui;
+    SpellChecker *checker;
 };
 
 #endif // SPELLCHECKERWINDOW_H
