@@ -8,7 +8,7 @@ QT       += core gui
 
 TARGET = SpellChecker
 TEMPLATE = app
-LIBS += -lhunspell-1.2
+LIBS += -lhunspell-1.3
 
 
 SOURCES += main.cpp\
