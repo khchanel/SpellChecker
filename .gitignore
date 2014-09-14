@@ -1,5 +1,7 @@
 # C++ objects and libs
 
+SpellChecker
+
 *.slo
 *.lo
 *.o
