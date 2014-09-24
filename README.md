@@ -8,11 +8,18 @@ Simple spell checker application written in C++/Qt
 
 The project depends on Qt4, Hunspell 1.3
 
+
+on fedora:
+
+```
+yum install qt-devel hunspell-devel
+```
+
 # Build:
 
 go to /build folder:
 ```
-$ qmake ../src/
+$ qmake-qt4 ../src/
 $ make
 ```
 
